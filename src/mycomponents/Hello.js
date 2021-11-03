@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Hello()
+function Hello(props)
 {
     return (
-        <h1>Hello i am from functional component</h1>
+        <h2>Hello {props.name} age {props.age}</h2>
     );
 }
 export default Hello
