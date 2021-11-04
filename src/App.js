@@ -4,12 +4,15 @@ import Hello from './mycomponents/Hello';
 import Welcome from './mycomponents/Welcome';
 
 function App() {
+
+
   return (
     <div className="App">
 
     <Hello name="shahriar" age="60"></Hello>
-    <Hello name="Sha" age="80"></Hello>
-    <Welcome></Welcome>
+
+
+    <Welcome name="babu"></Welcome>
 
     </div>
   );
