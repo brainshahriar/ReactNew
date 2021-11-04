@@ -6,17 +6,22 @@ class Welcome extends Component
 {
     constructor(){
         super()
-        this.state={
-            name:"Shahriar",
-            age:"28",
-            sex:"male",
+            var obj={
+                    name:"Shahriar",
+                    age:["28","30","20"],
+                    sex:{
+                        class2:"20",
+                        class3:"22",
+                        class10:"40"
+                    }         
         }
+        this.state=obj
     }
     render(){
         return <div>
             <h1>My name is = {this.state.name}</h1>
-            <h1>My age is = {this.state.age}</h1>
-            <h1>My sex is = {this.state.sex}</h1>
+            <h1>My age is = {this.state.age[0]}</h1>
+            <h1>My sex is = {this.state.sex.class3}</h1>
         </div>
     }
 }
