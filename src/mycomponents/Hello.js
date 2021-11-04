@@ -2,14 +2,14 @@ import React from 'react'
 
 function Hello(props)
 {
-    function Dothis()
+    function Dothis(e)
     {
-      alert('Button is clicked')
+      alert(e)
     }
     return (
 
         <div>
-        <button onClick={Dothis}>Click Me</button>
+        <button onClick={Dothis.bind(this,"Hello Shahriar")}>Click Me</button>
         <h2>Hello {props.name} age {props.age}</h2>
         </div>
     );
