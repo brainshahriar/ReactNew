@@ -1,13 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import App from "../App";
 
-function MyFun()
+class Welcome extends Component
 {
-    return(
-
-        <button className="btn btn-primary m-5">Test Bootstrap</button>
-
-    );
+    constructor(){
+        super()
+        this.state={
+            name:"Shahriar",
+            age:"28",
+            sex:"male",
+        }
+    }
+    render(){
+        return <div>
+            <h1>My name is = {this.state.name}</h1>
+            <h1>My age is = {this.state.age}</h1>
+            <h1>My sex is = {this.state.sex}</h1>
+        </div>
+    }
 }
-export default MyFun;
+export default Welcome
