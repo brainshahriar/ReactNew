@@ -1,19 +1,13 @@
-import React,{Component} from 'react'
+import React from "react";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import App from "../App";
 
-class Welcome extends Component
+function MyFun()
 {
-    DothisfromClass(x)
-    {
-      alert(x)
-    }
-    render()
-    {
+    return(
 
-            return <div>
-            <button onClick={this.DothisfromClass.bind(this,"Hello shawon")}>Click me for class</button>
-            <h1>I am shahriar from {this.props.name}</h1>
-            </div>
-        
-    }
+        <button className="btn btn-primary m-5">Test Bootstrap</button>
+
+    );
 }
-export default Welcome;
+export default MyFun;
